@@ -40,24 +40,44 @@ public class Loading extends javax.swing.JFrame implements Runnable{
         jPanel1 = new javax.swing.JPanel();
         lbl_count = new javax.swing.JLabel();
         progressbar = new javax.swing.JProgressBar();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(42, 79, 61));
         jPanel1.setLayout(null);
         jPanel1.add(lbl_count);
-        lbl_count.setBounds(180, 220, 40, 30);
+        lbl_count.setBounds(460, 510, 50, 30);
         jPanel1.add(progressbar);
-        progressbar.setBounds(100, 220, 200, 30);
+        progressbar.setBounds(330, 510, 300, 30);
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(212, 175, 55));
+        jLabel2.setText("Hotel Elysian Grove - Beatus Ille");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(190, 0, 560, 48);
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(139, 107, 77));
+        jLabel7.setText("Onde o luxo encontra a paz da natureza.");
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(280, 50, 360, 25);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\GitHub\\Interface-Grafica-Hotel\\Hotel-Elysian-Grove\\src\\main\\java\\com\\mycompany\\hotel\\elysian\\grove\\images\\loading-gif.gif")); // NOI18N
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(250, 70, 500, 450);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 908, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 565, Short.MAX_VALUE)
         );
 
         pack();
@@ -99,6 +119,9 @@ public class Loading extends javax.swing.JFrame implements Runnable{
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lbl_count;
     private javax.swing.JProgressBar progressbar;

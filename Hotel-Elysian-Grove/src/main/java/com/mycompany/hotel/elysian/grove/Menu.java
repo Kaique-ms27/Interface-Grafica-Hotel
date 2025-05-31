@@ -26,21 +26,174 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        cadCliente = new javax.swing.JButton();
+        cadFunc = new javax.swing.JButton();
+        cadReserva = new javax.swing.JButton();
+        cadQuarto = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        cadServico = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(42, 79, 61));
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(139, 107, 77));
+        jLabel7.setText("Obrigado por escolher nosso hotel");
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(212, 175, 55));
+        jLabel2.setText("Seja Bem Vindo!");
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\GitHub\\Interface-Grafica-Hotel\\Hotel-Elysian-Grove\\src\\main\\java\\com\\mycompany\\hotel\\elysian\\grove\\images\\logo-image.png")); // NOI18N
+
+        cadCliente.setText("Cadastrar Cliente");
+        cadCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cadClienteActionPerformed(evt);
+            }
+        });
+
+        cadFunc.setText("Cadastrar Funcionário");
+        cadFunc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cadFuncActionPerformed(evt);
+            }
+        });
+
+        cadReserva.setText("Realizar Reserva");
+        cadReserva.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cadReservaActionPerformed(evt);
+            }
+        });
+
+        cadQuarto.setText("Cadastrar Quarto");
+        cadQuarto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cadQuartoActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 3, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(212, 175, 55));
+        jLabel3.setText("Sua melhor escolha é aqui!");
+
+        cadServico.setText("Cadastrar Serviço");
+        cadServico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cadServicoActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(115, 115, 115)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel2))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 169, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addGap(162, 162, 162))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cadCliente)
+                                    .addComponent(cadReserva))
+                                .addGap(85, 85, 85)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cadQuarto)
+                                    .addComponent(cadFunc))
+                                .addGap(220, 220, 220))))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(335, 335, 335)
+                .addComponent(cadServico)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel7)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cadCliente)
+                    .addComponent(cadFunc))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cadReserva)
+                    .addComponent(cadQuarto))
+                .addGap(18, 18, 18)
+                .addComponent(cadServico)
+                .addGap(34, 34, 34)
+                .addComponent(jLabel3)
+                .addGap(58, 58, 58))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void cadClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadClienteActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        new Cliente().setVisible(true);
+    }//GEN-LAST:event_cadClienteActionPerformed
+
+    private void cadFuncActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadFuncActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        new CadFunc().setVisible(true);
+    }//GEN-LAST:event_cadFuncActionPerformed
+
+    private void cadReservaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadReservaActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        new CadReserva().setVisible(true);
+    }//GEN-LAST:event_cadReservaActionPerformed
+
+    private void cadQuartoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadQuartoActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        new CadQuarto().setVisible(true);
+    }//GEN-LAST:event_cadQuartoActionPerformed
+
+    private void cadServicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadServicoActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        new CadServico().setVisible(true);
+    }//GEN-LAST:event_cadServicoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +231,15 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton cadCliente;
+    private javax.swing.JButton cadFunc;
+    private javax.swing.JButton cadQuarto;
+    private javax.swing.JButton cadReserva;
+    private javax.swing.JButton cadServico;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
